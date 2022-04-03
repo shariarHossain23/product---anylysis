@@ -10,8 +10,8 @@ const Home = () => {
     <div>
       <div className="md:flex justify-center items-center px-12 mt-10">
         <div className="">
-          <h1 className="text-6xl text-black font-bold">Your Next Laptop</h1>
-          <h1 className="text-6xl text-purple-900 font-bold">
+          <h1 className="sm:text-4xl md:text-6xl text-black font-bold">Your Next Laptop</h1>
+          <h1 className="sm:text-4xl md:text-6xl text-purple-900 font-bold">
             Your Best Laptop
           </h1>
           <p className="mt-6">

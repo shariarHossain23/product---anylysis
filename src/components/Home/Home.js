@@ -1,9 +1,11 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import useReview from "../../Hooks/useReview";
 import HomeReview from "../HomeReview/HomeReview";
 
 const Home = () => {
-    const [reviews,setReviews] = useReview()
+  const [reviews] = useReview();
+  const naviagate = useNavigate()
   return (
     <div>
       <div className="md:flex justify-center items-center px-12 mt-10">
@@ -18,25 +20,30 @@ const Home = () => {
             functionality of a desktop computer, which means they can generally
             run the same software and open the same types of files.
           </p>
-          <button className="mt-4 bg-emerald-100 text-indigo-900 font-bold px-4 py-2 rounded-md">
+          <button className="mt-6 bg-emerald-100 text-indigo-900 font-bold px-4 py-2 rounded-md">
             Live demo
           </button>
         </div>
         <div>
           <img
-            className="w-screen"
+            className="mt-6"
             src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGxhcHRvcHxlbnwwfHwwfHw%3D&w=1000&q=80"
             alt=""
           />
         </div>
       </div>
       <div>
-          <h1 className="text-center mt-16 text-4xl">Customer Review</h1>
-          <div className="grid grid-cols-3 mt-10 gap-10">
-              {
-                  reviews.slice(0,3).map(person => <HomeReview key={person.id} person={person}></HomeReview>)
-              }
-          </div>
+        <h1 className="text-center mt-16 text-4xl">Customer Review</h1>
+        <div className="md:grid grid-cols-3 mt-10 gap-10">
+          {reviews.slice(0, 3).map((person) => (
+            <HomeReview key={person.id} person={person}></HomeReview>
+          ))}
+        </div>
+        <div className="text-center mt-12 ">
+          <button onClick={()=> naviagate('/review') } className="bg-indigo-800 text-white px-6 py-2 rounded">
+            show all reviews
+          </button>
+        </div>
       </div>
     </div>
   );

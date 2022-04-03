@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <div className="">
        <CustomLink className="text-lg font-semibold " to="/">Home</CustomLink>
-       <CustomLink className='text-lg font-semibold' to='reviews'> Reviews</CustomLink>
+       <CustomLink className='text-lg font-semibold' to='review'> Reviews</CustomLink>
     </div>
   );
 };

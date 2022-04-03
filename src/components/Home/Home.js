@@ -1,6 +1,9 @@
 import React from "react";
+import useReview from "../../Hooks/useReview";
+import HomeReview from "../HomeReview/HomeReview";
 
 const Home = () => {
+    const [reviews,setReviews] = useReview()
   return (
     <div>
       <div className="md:flex justify-center items-center px-12 mt-10">
@@ -29,6 +32,11 @@ const Home = () => {
       </div>
       <div>
           <h1 className="text-center mt-16 text-4xl">Customer Review</h1>
+          <div>
+              {
+                  reviews.slice(0,3).map(person => <HomeReview key={person.id} person={person}></HomeReview>)
+              }
+          </div>
       </div>
     </div>
   );

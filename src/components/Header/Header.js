@@ -10,7 +10,9 @@ const Header = () => {
       <div className={`md:flex justify-center absolute left-auto w-full duration-500 ease-in-out md:static ${open ?"top-12" :"top-[-220px]"}`}>
       <CustomLink className="text-lg font-semibold md:mx-4 " to="/">Home</CustomLink>
        <CustomLink className='text-lg font-semibold md:mx-4' to='review'> Reviews</CustomLink>
-       <CustomLink className='text-lg font-semibold' to='dashboard'> Dashboard</CustomLink>
+       <CustomLink className='text-lg font-semibold md:mx-4' to='/dashboard'> Dashboard</CustomLink>
+       <CustomLink className='text-lg font-semibold md:mx-4' to='/blog'> Blog</CustomLink>
+       <CustomLink className='text-lg font-semibold' to='/about'>About</CustomLink>
       </div>
     </div>
   );

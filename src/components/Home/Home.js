@@ -24,9 +24,9 @@ const Home = () => {
             Live demo
           </button>
         </div>
-        <div>
+        <div className="">
           <img
-            className="mt-6"
+            className="mt-6 "
             src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGxhcHRvcHxlbnwwfHwwfHw%3D&w=1000&q=80"
             alt=""
           />

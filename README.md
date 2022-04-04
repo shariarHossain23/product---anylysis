@@ -1,6 +1,6 @@
 # Laptop review
 
-Live site Link: https://velvety-muffin-42e7d0.netlify.app/.
+Live site Link: https://sparkling-phoenix-8e5872.netlify.app/.
 
 - This is laptop review website
 - this website using route
